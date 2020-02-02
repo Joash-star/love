@@ -43,13 +43,12 @@ const Page: React.FC<{
         <div className="home-page__hero-text">
           <div>
             <span className="home-page__hero__title">
-            <h1>Buy 2 Get 1 Free</h1>
-             
+              <h1>Final reduction</h1>
             </span>
           </div>
           <div>
             <span className="home-page__hero__title">
-               <h1>Free Worldwide Shipping</h1>
+              <h1>Up to 70% off sale</h1>
             </span>
           </div>
         </div>
@@ -70,11 +69,11 @@ const Page: React.FC<{
           )}
         </div>
       </div>
-
+      <ProductsFeatured />
       {categoriesExist() && (
         <div className="home-page__categories">
           <div className="container">
-         
+            <h3>Shop by category</h3>
             <div className="home-page__categories__list">
               {categories.edges.map(({ node: category }) => (
                 <div key={category.id}>
@@ -97,7 +96,7 @@ const Page: React.FC<{
                         })`,
                       }}
                     />
-                  <h3><u>SHOP {category.name}</u></h3>
+                    <h3>{category.name}</h3>
                   </Link>
                 </div>
               ))}
@@ -105,7 +104,6 @@ const Page: React.FC<{
           </div>
         </div>
       )}
-        <ProductsFeatured />
     </>
   );
 };

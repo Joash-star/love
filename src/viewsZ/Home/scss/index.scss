@@ -35,21 +35,23 @@
     &__title {
       background-color: $white;
       display: inline-block;
+      transform: skew(45deg);
+      padding: $spacer $spacer * 3;
       margin-bottom: $spacer / 2;
 
       @media (max-width: $small-screen) {
-        padding: 0.3rem $spacer;
+        padding: 0.6rem $spacer;
         width: calc(100% - 4rem);
       }
 
       h1 {
         display: inline-block;
+        transform: skew(-45deg);
         font-weight: $bold-font-weight;
         text-transform: uppercase;
         color: $blue;
         font-size: $h1-font-size;
         font-weight: 900;
-        font-family: "Amazon Ember",Arial,sans-serif;
 
         @media (max-width: $small-screen) {
           font-size: $h4-font-size;
@@ -64,17 +66,11 @@
 
   &__categories {
     margin-bottom: 2rem;
-    margin-top:2rem !important;
-
 
     h3 {
       text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-      margin-top:-0.5rem;
-      font-size: 15px !important;
-      color:#111 !important;
-      font-family: "Amazon Ember",Arial,sans-serif;
+      font-weight: $bold-font-weight;
+      margin-bottom: 1rem;
     }
 
     &__list {
@@ -103,10 +99,9 @@
         h3 {
           text-transform: uppercase;
           font-weight: $bold-font-weight;
-          font-family: "Amazon Ember",Arial,sans-serif;
 
           &:after {
-      
+            content: url("../../../images/carousel-arrow.svg");
             display: inline-block;
             transform: rotate(180deg);
             margin-left: 1rem;
