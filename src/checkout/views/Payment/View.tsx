@@ -250,7 +250,7 @@ const View: React.FC<RouteComponentProps<{ token?: string }>> = ({
 
                       case PROVIDERS.STRIPE:
                         return (
-                          <Option label="Stripe" {...optionProps(providerName)}>
+                          <Option label="Pay with Credit Card" {...optionProps(providerName)}>
                             <Stripe {...paymentGatewayProps} />
                           </Option>
                         );
