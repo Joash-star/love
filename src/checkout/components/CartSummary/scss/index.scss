@@ -7,7 +7,11 @@
   p,
   h4 {
     text-transform: uppercase;
-    font-weight: $bold-font-weight;
+    color:#111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
   }
 
   &__header {
@@ -36,7 +40,7 @@
       justify-content: space-between;
 
       span {
-        font-size: $small-font-size;
+        font-size: 13px;
       }
     }
   }
@@ -46,5 +50,9 @@
     justify-content: space-between;
     padding: $spacer 0;
     border-top: 1px solid $gray;
+    color:#111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-weight: 700;
+    font-size: 15px;
   }
 }
