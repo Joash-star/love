@@ -7,10 +7,6 @@ import { Thumbnail } from "@components/molecules";
 import { BasicProductFields } from "../../views/Product/types/BasicProductFields";
 
 export interface Product extends BasicProductFields {
-  category?: {
-    id: string;
-    name: string;
-  };
   pricing: {
     priceRange: {
       start: {
@@ -35,7 +31,7 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
         },
       },
     },
-    category,
+  
   } = product;
   return (
     <div className="product-list-item">
@@ -43,7 +39,6 @@ const ProductListItem: React.FC<ProductListItemProps> = ({ product }) => {
         <Thumbnail source={product} />
       </div>
       <h4 className="product-list-item__title">{product.name}</h4>
-      <p className="product-list-item__category">{category.name}</p>
       <p className="product-list-item__price">{localized}</p>
     </div>
   );

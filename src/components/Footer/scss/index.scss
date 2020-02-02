@@ -2,7 +2,7 @@
 
 .footer {
   &__favicons {
-    border-top: 1px solid $gray-light;
+
     display: flex;
     justify-content: center;
   }
@@ -26,18 +26,20 @@
       &-header {
         font-weight: $bold-font-weight;
         margin-bottom: $spacer;
+        font-family: "Amazon Ember",Arial,sans-serif;
       }
 
       &-content {
         p {
           font-weight: $bold-font-weight;
           margin-bottom: $spacer;
-          font-size: $small-font-size;
-          color: $gray;
+          font-family: "Amazon Ember",Arial,sans-serif;
+          font-size: 13px;
+          color: #111;
 
           a {
             text-decoration: none;
-            color: $gray;
+            color: #111;
           }
         }
       }
@@ -60,15 +62,18 @@
     &__section {
       &-header {
         font-weight: $bold-font-weight;
-        margin-bottom: $spacer;
+        margin-bottom:0.5rem;
         text-transform: uppercase;
+        font-family: "Amazon Ember",Arial,sans-serif;
+        font-size:15px !important;
       }
 
       &-content {
         p {
-          margin-bottom: $spacer;
-          font-size: $small-font-size;
+          font-size: 15px;
+          font-family: "Amazon Ember",Arial,sans-serif;
           color: $gray;
+
 
           a {
             text-decoration: none;
@@ -78,4 +83,33 @@
       }
     }
   }
+}
+
+
+.tra { margin-top:3px !important;
+
+ margin-bottom:10px !important;   
+    display: flex;
+    justify-content: center;}
+
+
+.pay{
+
+  margin-top:7px !important;
+  text-align: center !important;
+  font-size:13px;
+  font-weight:400;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  color:#111;
+}
+
+.juu {
+  border-top: 1px solid $gray-light !important;
+  margin-bottom: -5px !important;
+  padding-top: 12px;
+  text-align: center !important;
+  font-size:13px;
+  font-weight:400;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  color:#111;
 }

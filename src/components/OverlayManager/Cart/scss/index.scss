@@ -6,6 +6,9 @@
 
   .overlay__header {
     justify-content: initial;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    font-size: 13px !important;
+    line-height: 1.255 !important;
 
     &__close-icon {
       margin-left: auto;
@@ -33,9 +36,17 @@
         padding: 0 $spacer;
 
         p {
-          font-weight: $bold-font-weight;
           text-transform: uppercase;
+          font-size: 13px !important;
           line-height: 1.5;
+          font-family: "Amazon Ember",Arial,sans-serif;
+
+        }
+        &__bei {
+         color:red;
+         text-transform: uppercase;
+         font-size: 13px !important;
+         line-height: 1.5;
         }
 
         &__variant {
@@ -44,21 +55,21 @@
           margin-top: $spacer / 2;
 
           span {
-            color: $gray;
-            font-size: $small-font-size;
+            color: #111;
+            font-size: 13px !important;
           }
         }
 
         &__delete-icon {
-          background-color: $gray-light;
           border-radius: $spacer;
+          color:#0066C0;
           width: 1.5rem;
           height: 1.5rem;
           text-align: center;
           line-height: 1.5rem;
           margin-top: $spacer / 2;
           cursor: pointer;
-
+          font-size: 11px !important;
           svg * {
             transition: 0.3s;
           }
@@ -75,7 +86,7 @@
 
   &__footer {
     background-color: $gray-light;
-    padding: $spacer;
+    padding: 2rem;
     position: absolute;
     bottom: 0;
     width: 25rem;
@@ -84,7 +95,9 @@
       display: flex;
       padding-bottom: $spacer;
       text-transform: uppercase;
-      font-weight: $bold-font-weight;
+      font-family: "Amazon Ember",Arial,sans-serif;
+      font-weight:600;
+      font-size:13px;
       justify-content: space-between;
       border-bottom: 1px solid $gray;
     }
@@ -106,15 +119,19 @@
       font-weight: $bold-font-weight;
       text-transform: uppercase;
       margin-bottom: $spacer;
+      font-family: "Amazon Ember",Arial,sans-serif;
     }
 
     p {
       color: $gray;
+      font-family: "Amazon Ember",Arial,sans-serif;
+
     }
 
     &__action {
       text-align: center;
       margin-top: $spacer;
+      font-family: "Amazon Ember",Arial,sans-serif;
     }
   }
 }

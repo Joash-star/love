@@ -10,6 +10,16 @@
   height: 3.55rem;
   position: relative;
 
+  @media (max-width: $small-screen) {
+  left: 0;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  z-index:1;  
+      } 
+
   &__left {
     flex-basis: calc(50% - 2rem);
 
@@ -41,13 +51,6 @@
   &__center {
     align-self: center;
 
-    svg {
-      width: 4rem;
-
-      @media (min-width: $small-screen) {
-        width: 6rem;
-      }
-    }
   }
 
   &__item {
@@ -57,9 +60,12 @@
 
     a {
       text-decoration: none;
-      color: $base-font-color;
+      color: #111;
       position: relative;
       transition: 0.3s;
+      font-size:13px !important;
+      font-family: "Amazon Ember",Arial,sans-serif !important;
+      line-height: 19px !important;
 
       &:hover {
         color: $turquoise;

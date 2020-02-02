@@ -5,24 +5,33 @@
 
   &__title {
     text-transform: $product-item-title-text-transform;
-    font-weight: $product-item-title-font-weight;
-    margin-top: $spacer;
     text-align: left;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    color: #111 !important;
+    margin-top: -2rem;
+    @media (max-width: $small-screen) {
+        margin-top: 0px !important;
+      }
+
   }
 
-  &__category {
-    color: $product-item-category-color;
-    text-align: left;
-  }
+
 
   &__price {
-    font-weight: $product-item-price-font-weight;
-    margin: $product-item-price-margin;
+    font-weight:bold !important;
     text-align: left;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #111 !important; 
+    font-size: 13px !important;
+   
   }
 
   &__image {
-    background-color: $turquoise-light;
+   
     display: flex;
     height: 350px;
     justify-content: center;

@@ -196,6 +196,101 @@ class ProductDescription extends React.Component<
             }
           />
         </div>
+         <div className="container">
+  <div className="interior">
+    <a  href="#open-modal" className="under">View Size Chart</a>
+  </div>
+</div>
+<div id="open-modal" className="modal-window">
+  <div>
+    <a href="#" title="Close" className="modal-close">X</a>
+    <span className="mysize"> WOMEN`S SIZE CHART (Measurements in inches)</span>
+    <div className="content">
+    
+            <table>
+  <thead>
+    <tr> 
+      <th  className="cont">SIZE  (UK/USA)  </th>
+      <th  className="cont">BUST</th>
+      <th  className="cont">WAIST</th>
+      <th className="cont" >HIP </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-column="First Name">UK4 / US0</td>
+      <td data-column="Last Name">31</td>
+      <td data-column="Job Title">23.5</td>
+      <td data-column="Twitter">33</td>
+    </tr>
+    <tr>
+      <td data-column="First Name">UK6 / US2</td>
+      <td data-column="Last Name">32</td>
+      <td data-column="Job Title">24.5</td>
+      <td data-column="Twitter">34</td>
+    </tr>
+    <tr>
+      <td data-column="First Name">UK8 / US4</td>
+      <td data-column="Last Name">33</td>
+      <td data-column="Job Title">25.5</td>
+      <td data-column="Twitter">35</td>
+    </tr>
+    <tr>
+      <td data-column="First Name">UK10 / US6</td>
+      <td data-column="Last Name">35</td>
+      <td data-column="Job Title">27.5</td>
+      <td data-column="Twitter">37</td>
+    </tr>
+    <tr>
+      <td data-column="First Name">UK12 / US8</td>
+      <td data-column="Last Name">37</td>
+      <td data-column="Job Title">29.5</td>
+      <td data-column="Twitter">39</td>
+    </tr>
+        <tr>
+      <td data-column="First Name">UK14 / US10</td>
+      <td data-column="Last Name">39</td>
+      <td data-column="Job Title">31.5</td>
+      <td data-column="Twitter">41</td>
+    </tr>
+        <tr>
+      <td data-column="First Name">UK16 / US12</td>
+      <td data-column="Last Name">41</td>
+      <td data-column="Job Title">33.5</td>
+      <td data-column="Twitter">43</td>
+    </tr>
+ 
+            <tr>
+      <td data-column="First Name">UK18 / US14</td>
+      <td data-column="Last Name">43.5</td>
+      <td data-column="Job Title">36</td>
+      <td data-column="Twitter">45.5</td>
+    </tr>
+            <tr>
+      <td data-column="First Name">UK20 / US16</td>
+      <td data-column="Last Name">46.5</td>
+      <td data-column="Job Title">39</td>
+      <td data-column="Twitter">48.5</td>
+    </tr>
+            <tr>
+      <td data-column="First Name">UK22 / US18</td>
+      <td data-column="Last Name">49</td>
+      <td data-column="Job Title">41.5</td>
+      <td data-column="Twitter">51</td>
+    </tr>
+              <tr>
+      <td data-column="First Name">UK24 / US20</td>
+      <td data-column="Last Name">52</td>
+      <td data-column="Job Title">44.5</td>
+      <td data-column="Twitter">54</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+ 
+ 
+  </div>
+    </div>
         <div className="product-description__about">
           <h4>Description</h4>
           {children}
