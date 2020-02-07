@@ -13,7 +13,7 @@
     }
 
     svg {
-      width: 8rem;
+      width: 9rem;
     }
 
     a {
@@ -86,9 +86,11 @@
   }
 
   &__header {
-    text-transform: uppercase;
     font-weight: $bold-font-weight;
-    font-size: $h3-font-size;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    color: #111;
   }
 
   &__grid {
